@@ -19,8 +19,8 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/oneplus/sm8650-common',
-    'hardware/qcom-caf/sm8650',
+    'device/oneplus/sm8750-common',
+    'hardware/qcom-caf/sm8750',
     'hardware/qcom-caf/wlan',
     'hardware/oplus',
     'vendor/qcom/opensource/commonsys/display',
@@ -120,7 +120,7 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/libnfc-nxp.conf': blob_fixup()
         .regex_replace('(NXPLOG_.*_LOGLEVEL)=0x03', '\\1=0x02')
         .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0'),
-    ('vendor/etc/media_codecs_pineapple.xml', 'vendor/etc/media_codecs_pineapple_vendor.xml'): blob_fixup()
+    ('vendor/etc/media_codecs_sun.xml', 'vendor/etc/media_codecs_sun_vendor.xml'): blob_fixup()
         .regex_replace('.*media_codecs_(google_audio|google_c2|google_telephony|google_video|vendor_audio).*\n', ''),
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
         .add_needed('libhidlbase_shim.so'),
@@ -129,7 +129,7 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'sm8650-common',
+    'sm8750-common',
     'oneplus',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,

@@ -203,7 +203,7 @@ fi
 case "$platformid" in
 	"557"|"577")
 		#Pass as an argument the max number of clusters supported on the SOC
-		/vendor/bin/sh /vendor/bin/init.kernel.post_boot-pineapple.sh 4
+		/vendor/bin/sh /vendor/bin/init.kernel.post_boot-sun.sh 4
 		;;
 	"614"|"632"|"642"|"643")
 		#Pass as an argument the max number of clusters supported on the SOC

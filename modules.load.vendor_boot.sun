@@ -1,7 +1,7 @@
 arm_smmu.ko
 bcl_pmic5.ko
 camcc-cliffs.ko
-camcc-pineapple.ko
+camcc-sun.ko
 clk-dummy.ko
 clk-qcom.ko
 clk-rpmh.ko
@@ -14,10 +14,10 @@ dcc_v2.ko
 dcvs_fp.ko
 debug-regulator.ko
 debug_symbol.ko
-dispcc-pineapple.ko
+dispcc-sun.ko
 dispcc-volcano.ko
 gcc-cliffs.ko
-gcc-pineapple.ko
+gcc-sun.ko
 gcc-volcano.ko
 gdsc-regulator.ko
 gh_arm_drv.ko
@@ -27,7 +27,7 @@ gh_msgq.ko
 gh_rm_drv.ko
 gh_virt_wdt.ko
 gic_intr_routing.ko
-gpucc-pineapple.ko
+gpucc-sun.ko
 gunyah_loader.ko
 hwkm.ko
 icc-bcm-voter.ko
@@ -46,11 +46,11 @@ msm_qmp.ko
 nvmem_qcom-spmi-sdam.ko
 phy-qcom-ufs.ko
 phy-qcom-ufs-qmp-v4-crow.ko
-phy-qcom-ufs-qmp-v4-pineapple.ko
+phy-qcom-ufs-qmp-v4-sun.ko
 phy-qcom-ufs-qrbtc-sdm845.ko
 pinctrl-cliffs.ko
 pinctrl-msm.ko
-pinctrl-pineapple.ko
+pinctrl-sun.ko
 pinctrl-volcano.ko
 pmic-pon-log.ko
 proxy-consumer.ko
@@ -77,7 +77,7 @@ qcom-spmi-pmic.ko
 qcom_tsens.ko
 qcom_wdt_core.ko
 qnoc-cliffs.ko
-qnoc-pineapple.ko
+qnoc-sun.ko
 qnoc-qos.ko
 qnoc-volcano.ko
 qrtr.ko
@@ -91,10 +91,10 @@ smem.ko
 socinfo.ko
 spmi-pmic-arb.ko
 stub-regulator.ko
-tcsrcc-pineapple.ko
+tcsrcc-sun.ko
 thermal_minidump.ko
 thermal_pause.ko
 tmecom-intf.ko
 ufshcd-crypto-qti.ko
 ufs_qcom.ko
-videocc-pineapple.ko
+videocc-sun.ko

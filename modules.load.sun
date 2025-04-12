@@ -45,7 +45,7 @@ cpu_voltage_cooling.ko
 crc-itu-t.ko
 ddr_cdev.ko
 debugcc-cliffs.ko
-debugcc-pineapple.ko
+debugcc-sun.ko
 debugcc-volcano.ko
 dmesg_dumper.ko
 drm_display_helper.ko

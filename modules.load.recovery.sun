@@ -10,7 +10,7 @@ bwmon.ko
 bwprof.ko
 c1dcvs_scmi_v2.ko
 camcc-cliffs.ko
-camcc-pineapple.ko
+camcc-sun.ko
 camcc-volcano.ko
 cdsprm.ko
 charger-ulog-glink.ko
@@ -46,12 +46,12 @@ dcc_v2.ko
 dcvs_fp.ko
 ddr_cdev.ko
 debugcc-cliffs.ko
-debugcc-pineapple.ko
+debugcc-sun.ko
 debugcc-volcano.ko
 debug-regulator.ko
 debug_symbol.ko
 device_info.ko
-dispcc-pineapple.ko
+dispcc-sun.ko
 dispcc-volcano.ko
 dmesg_dumper.ko
 drm_display_helper.ko
@@ -62,7 +62,7 @@ eud.ko
 f_fs_ipc_log.ko
 fsa4480-i2c.ko
 gcc-cliffs.ko
-gcc-pineapple.ko
+gcc-sun.ko
 gcc-volcano.ko
 gdsc-regulator.ko
 gh_arm_drv.ko
@@ -82,7 +82,7 @@ glink_pkt.ko
 glink_probe.ko
 gpr_dlkm.ko
 gpucc-cliffs.ko
-gpucc-pineapple.ko
+gpucc-sun.ko
 gpucc-volcano.ko
 gpu_dump_skip_cdev.ko
 gunyah_loader.ko
@@ -149,11 +149,11 @@ phy-qcom-emu.ko
 phy-qcom-ufs.ko
 phy-qcom-ufs-qmp-v4-crow.ko
 phy-qcom-ufs-qmp-v4.ko
-phy-qcom-ufs-qmp-v4-pineapple.ko
+phy-qcom-ufs-qmp-v4-sun.ko
 phy-qcom-ufs-qrbtc-sdm845.ko
 pinctrl-cliffs.ko
 pinctrl-msm.ko
-pinctrl-pineapple.ko
+pinctrl-sun.ko
 pinctrl-spmi-gpio.ko
 pinctrl-spmi-mpp.ko
 pinctrl-volcano.ko
@@ -214,7 +214,7 @@ qcom_wdt_core.ko
 qfprom-sys.ko
 qmi_helpers.ko
 qnoc-cliffs.ko
-qnoc-pineapple.ko
+qnoc-sun.ko
 qnoc-qos.ko
 qnoc-volcano.ko
 qpnp-amoled-regulator.ko
@@ -271,7 +271,7 @@ stub-regulator.ko
 sync_fence.ko
 sysmon_subsystem_stats.ko
 sys_pm_vx.ko
-tcsrcc-pineapple.ko
+tcsrcc-sun.ko
 thermal_config.ko
 thermal_minidump.ko
 thermal_pa_adc.ko
@@ -287,6 +287,6 @@ usb_f_cdev.ko
 usb_f_gsi.ko
 usb_f_qdss.ko
 usb_f_rndis.ko
-videocc-pineapple.ko
+videocc-sun.ko
 videocc-volcano.ko
 wcd_usbss_i2c.ko
