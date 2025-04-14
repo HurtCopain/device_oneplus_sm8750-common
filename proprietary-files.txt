@@ -1144,6 +1144,7 @@ vendor/lib64/libqrtr.so
 vendor/lib64/libqsocket.so
 vendor/lib64/libsmemlog.so
 vendor/lib64/libsystem_health_mon2.so
+vendor/lib64/vendor.qti.syshealthmon-V1-ndk.so
 
 # QSPM
 vendor/bin/vendor.qti.qspmhal-service
