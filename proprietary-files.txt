@@ -91,6 +91,7 @@ vendor/etc/models/acd/speech.eai
 vendor/etc/seccomp_policy/qsap_voiceui.policy
 vendor/lib64/libAlacSwDec.so
 vendor/lib64/libApeSwDec.so
+vendor/lib64/libaudioplatformconverter.qti.so
 vendor/lib64/libEvrcSwCodec.so
 vendor/lib64/libFlacSwDec.so
 vendor/lib64/libPeripheralStateUtils.so
@@ -122,6 +123,7 @@ vendor/lib64/libtensorflowlite_c.so
 vendor/lib64/libvui_dmgr.so
 vendor/lib64/libvui_dmgr_client.so
 vendor/lib64/libvui_intf.so
+vendor/lib64/qti-audio-types-aidl-V1-ndk.so
 
 # Audio ASR ???
 
@@ -153,12 +155,17 @@ vendor/etc/init/android.hardware.bluetooth@aidl-service-qti.rc
 vendor/etc/vintf/manifest/bttpi-saidl.xml
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.bluetooth@aidl-impl-qti.so
+vendor/lib64/hw/android.hardware.bluetooth.lmp_event-impl-qti.so
+vendor/lib64/hw/mbedtls_qti.so
+vendor/lib64/hw/vendor.qti.hardware.bluetooth.finder-impl-qti.so
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@aidl-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bttpi-impl.so
 vendor/lib64/lib_bt_aptx.so
 vendor/lib64/lib_bt_ble.so
 vendor/lib64/lib_bt_bundle.so
 vendor/lib64/libbtnv.so
 vendor/lib64/libsoc_helper.so
+vendor/lib64/vendor.qti.hardware.bluetooth_sar-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.bttpi-V3-ndk.so
 
 # Bluetooth (A2DP)
@@ -166,13 +173,24 @@ vendor/lib64/btaudio_offload_if.so
 vendor/lib64/hw/android.hardware.bluetooth.audio-impl-qti.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
+vendor/lib64/hw/vendor.qti.hardware.fm-impl.so
 vendor/lib64/libbluetooth_audio_session_aidl_qti.so
 vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/libbluetooth_audio_session_qti_2_1.so
 vendor/lib64/libbt-hidlclient.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
+vendor/lib64/vendor.qti.hardware.fm-V1-ndk.so
 
 # Camera ??? (LOL)
+odm/lib64/libapsjpeg.so
+odm/lib64/libarcsoft_qnnhtp.so
+odm/lib64/libc++_shared.so
+odm/lib64/libGaiaClient_vnd.so
+odm/lib64/libmpbase.so
+vendor/lib64/libnanopb.so
+vendor/lib64/libos.so
+vendor/lib64/libsynx.so
+vendor/lib64/libthreadutils.so
 
 # Camera firmware ??? (LOL)
 
@@ -489,6 +507,7 @@ vendor/bin/dspservice
 vendor/etc/init/vendor.qti.hardware.dsp-service.rc
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
+vendor/lib64/vendor.qti.hardware.dsp-V1-ndk.so
 
 # ESE
 vendor/lib64/vendor.qti.esepowermanager@1.0.so
@@ -671,6 +690,7 @@ vendor/lib64/libwifiobserver.so
 vendor/lib64/libxtadapter.so
 vendor/lib64/vendor.qti.gnss-V7-ndk.so
 vendor/lib64/vendor.qti.gnss-service.so
+vendor/lib64/vendor.qti.hardware.cacertaidlservice-V1-ndk.so
 
 # HDCP
 vendor/bin/hdcp1prov
@@ -777,12 +797,14 @@ vendor/lib64/vendor.qti.ims.callinfo@1.0.so
 vendor/lib64/vendor.qti.ims.configaidlservice-V1-ndk.so
 vendor/lib64/vendor.qti.ims.connectionaidlservice-V1-ndk.so
 vendor/lib64/vendor.qti.ims.factoryaidlservice-V1-ndk.so
+vendor/lib64/vendor.qti.ims.imscmaidlservice-V1-ndk.so
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 vendor/lib64/vendor.qti.ims.rcssipaidlservice-V1-ndk.so
 vendor/lib64/vendor.qti.ims.rcsuceaidlservice-V1-ndk.so
+vendor/lib64/vendor.qti.ims.uceaidlservice-V1-ndk.so
 
 # Identity
 vendor/bin/hw/android.hardware.identity-service-qti
@@ -919,6 +941,7 @@ odm/etc/charge.cfg
 odm/etc/init/vendor.oplus.hardware.charger-V6-service.rc
 odm/etc/vintf/manifest/manifest_oplus_charger_aidl.xml
 odm/lib64/vendor.oplus.hardware.charger-V6-ndk.so
+vendor/lib64/vendor.oplus.hardware.charger-V5-ndk.so
 
 # OPLUS Display
 odm/bin/cwb_utils_aidl
@@ -1034,7 +1057,9 @@ vendor/lib64/libqape_oem_ext.so
 vendor/lib64/libqapesdk.so
 vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqti-perfd.so
+vendor/lib64/libqti-perfextn-intf.so
 vendor/lib64/libqti-qesdk-secure.so
+vendor/lib64/libqti-scenariod.so
 vendor/lib64/libqti-util.so
 vendor/lib64/libqti-utils.so
 vendor/lib64/libreffeature.so
@@ -1049,6 +1074,8 @@ vendor/lib64/vendor.qti.memory.pasrmanager-V1-ndk.so
 vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so
 vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so
 vendor/lib64/vendor.qti.power.pasrmanager@1.0.so
+vendor/lib64/vendor.qti.snapdragonServices.qape-V1-ndk.so
+vendor/lib64/vendor.qti.snapdragonServices-V1-ndk.so
 
 # PSI Client
 vendor/bin/hw/vendor.qti.psiclient@1.0-service
@@ -1239,6 +1266,7 @@ vendor/etc/vintf/manifest/deviceinfo-saidl.xml
 vendor/etc/vintf/manifest/qms-saidl.xml
 vendor/etc/vintf/manifest/vendor.qti.hardware.radio.qtiradioconfig.xml
 vendor/lib64/deviceInfoServiceModuleNr.so
+vendor/lib64/libATFWD.so
 vendor/lib64/libQtiRilLoadable.so
 vendor/lib64/liblqe.so
 vendor/lib64/libprotobuf-cpp-full-21.12.so
@@ -1262,6 +1290,7 @@ vendor/lib64/libqdpr.so
 vendor/lib64/libqms.so
 vendor/lib64/libqms_client.so
 vendor/lib64/libqsh_ble_pb.so
+vendor/lib64/libQtiSocket.so
 vendor/lib64/libril-db.so
 vendor/lib64/libril-legacy.so
 vendor/lib64/libril-qc-ltedirectdisc.so
@@ -1369,6 +1398,7 @@ vendor/lib64/libgpt.so
 vendor/lib64/libops.so
 vendor/lib64/libqisl.so
 vendor/lib64/librpmb.so
+vendor/lib64/libseclog.so
 vendor/lib64/libspl.so
 vendor/lib64/libssd.so
 vendor/lib64/vendor.qti.hardware.qseecom-V1-ndk.so
