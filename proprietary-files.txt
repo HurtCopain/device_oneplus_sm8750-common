@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus 13 (CPH2655_15.0.0.703(EX01)).
+## are from OnePlus 13 (CPH2655_15.0.0.832(EX01)).
 ## NOTE: WIP!!! Missing stuff until I figure out exactly what's needed
 
 # Current blobs with ELF checks disabled:
@@ -935,12 +935,12 @@ odm/lib64/libosenseaidlhalclient.so
 odm/lib64/libosensenativeproxy_client.so
 
 # OPLUS Charger
-odm/bin/hw/vendor.oplus.hardware.charger-V6-service
+odm/bin/hw/vendor.oplus.hardware.charger-V7-service
 odm/bin/hw/wlschgd
 odm/etc/charge.cfg
-odm/etc/init/vendor.oplus.hardware.charger-V6-service.rc
+odm/etc/init/vendor.oplus.hardware.charger-V7-service.rc
 odm/etc/vintf/manifest/manifest_oplus_charger_aidl.xml
-odm/lib64/vendor.oplus.hardware.charger-V6-ndk.so
+odm/lib64/vendor.oplus.hardware.charger-V7-ndk.so
 vendor/lib64/vendor.oplus.hardware.charger-V5-ndk.so
 
 # OPLUS Display
@@ -1211,7 +1211,6 @@ system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/qti_libpermissions.xml
 system_ext/etc/permissions/qti_permissions.xml
 system_ext/framework/qcrilhook.jar
-system_ext/framework/sts-osdk-plugin.jar
 system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/hw/qcrilNrd
 vendor/bin/ks
