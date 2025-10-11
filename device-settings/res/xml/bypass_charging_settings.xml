@@ -13,7 +13,7 @@
             android:summary="@string/bypass_charging_summary"
             android:persistent="false" />
 
-        <org.lineageos.device.DeviceSettings.preferences.CustomSeekBarPreference
+        <org.lineageos.device.settings.preferences.CustomSeekBarPreference
             android:key="bypass_charging_target"
             android:title="@string/bypass_charging_target_title"
             android:summary="@string/bypass_charging_target_summary"

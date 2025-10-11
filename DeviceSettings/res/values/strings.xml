@@ -81,7 +81,20 @@
     <string name="bypass_charging_unavailable">Bypass charging is not supported on this device</string>
     <string name="bypass_charging_enabled">Enabled</string>
     <string name="bypass_charging_disabled">Disabled</string>
+<<<<<<< HEAD:DeviceSettings/res/values/strings.xml
     <string name="bypass_charging_error">Coudn\'t enable Bypass Charging.</string>
+=======
+    <string name="bypass_charging_error">It was not possible to change Bypass Charging status. Please, try again later.</string>
+    <string name="bypass_charging_target_title">Target level</string>
+    <string name="bypass_charging_target_summary">Battery will charge until it reaches target level, then bypass charging will be activated.</string>
+    <string name="bypass_charging_waiting">Battery will charge until it reaches target level</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Value: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">by default</string>
+    <string name="custom_seekbar_default_value_to_set">Default value: <xliff:g id="v">%s</xliff:g>\nLong tap to set</string>
+    <string name="custom_seekbar_default_value_is_set">Default value is set</string>
+>>>>>>> 96046be (DeviceSettings: rework bypass charging):device-settings/res/values/strings.xml
 
     <!-- GameBar Overlay -->
     <string name="game_bar_title">GameBar</string>
