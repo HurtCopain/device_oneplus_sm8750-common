@@ -98,8 +98,7 @@ public class DeviceSettings extends SettingsBasePreferenceFragment
         //     mUSB2FastChargeModeSwitch.setEnabled(false);
         // }
 
-<<<<<<< HEAD:DeviceSettings/src/org/lineageos/device/DeviceSettings/DeviceSettings.java
-=======
+
         mOnePulsePWMSwitch = (SwitchPreferenceCompat) findPreference(Constants.KEY_ONEPULSE_PWM);
         if (Utils.fileWritable(Constants.NODE_ONEPULSE_PWM)) {
             mOnePulsePWMSwitch.setEnabled(true);
@@ -110,7 +109,6 @@ public class DeviceSettings extends SettingsBasePreferenceFragment
             mOnePulsePWMSwitch.setEnabled(false);
         }
 
->>>>>>> 96046be (DeviceSettings: rework bypass charging):device-settings/src/org/lineageos/device/settings/DeviceSettings.java
         initNotificationSliderPreference();
     }
 
@@ -151,8 +149,7 @@ public class DeviceSettings extends SettingsBasePreferenceFragment
     	   //  Utils.writeValue(FILE_FAST_CHARGE, enabled ? "1" : "0");
         //     return true;
         // }
-<<<<<<< HEAD:DeviceSettings/src/org/lineageos/device/DeviceSettings/DeviceSettings.java
-=======
+
         if (preference == mOnePulsePWMSwitch) {
             boolean enabled = (Boolean) newValue;
             SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getContext());
@@ -160,7 +157,6 @@ public class DeviceSettings extends SettingsBasePreferenceFragment
             Utils.writeValue(Constants.NODE_ONEPULSE_PWM, enabled ? "1" : "0");
             return true;
         }
->>>>>>> 96046be (DeviceSettings: rework bypass charging):device-settings/src/org/lineageos/device/settings/DeviceSettings.java
 
         String key = preference.getKey();
         switch (key) {
@@ -416,8 +412,6 @@ public class DeviceSettings extends SettingsBasePreferenceFragment
     //     }
     // }
 
-<<<<<<< HEAD:DeviceSettings/src/org/lineageos/device/DeviceSettings/DeviceSettings.java
-=======
     public static void restoreOnePulsePwmSetting(Context context) {
         if (Utils.fileWritable(Constants.NODE_ONEPULSE_PWM)) {
             SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
@@ -427,7 +421,6 @@ public class DeviceSettings extends SettingsBasePreferenceFragment
         }
     }
 
->>>>>>> 96046be (DeviceSettings: rework bypass charging):device-settings/src/org/lineageos/device/settings/DeviceSettings.java
     private static int getDefaultResIdForUsage(String usage) {
         switch (usage) {
             case Constants.NOTIF_SLIDER_FOR_NOTIFICATION:
