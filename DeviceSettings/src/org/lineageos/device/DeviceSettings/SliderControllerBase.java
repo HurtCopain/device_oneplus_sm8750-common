@@ -24,8 +24,10 @@ import android.util.Log;
 
 import lineageos.providers.LineageSettings;
 
-import org.lineageos.internal.util.FileUtils;
+import org.lineageos.device.DeviceSettings.utils.FileUtils;
 import org.lineageos.device.DeviceSettings.Constants;
+
+
 
 public abstract class SliderControllerBase {
 
@@ -80,7 +82,7 @@ public abstract class SliderControllerBase {
         }
 
         try {
-            int state = Integer.parseInt(FileUtils.readOneLine(Constants.NODE_SLIDER_STATE).trim());
+            int state = Integer.parseInt(FileUtils.readLine(Constants.NODE_SLIDER_STATE).trim());
             ret = processAction(mActions[state - 1]);
             if (ret > 0 && notify) {
                 sendUpdateBroadcast(context, state - 1, ret);
