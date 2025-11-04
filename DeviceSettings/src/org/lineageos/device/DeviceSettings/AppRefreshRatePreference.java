@@ -6,7 +6,7 @@
  * Mimics ListPreference UI with icon on left, dropdown in middle, delete on right.
  */
 
-package org.lineageos.device.settings.preferences;
+package org.lineageos.device.DeviceSettings.preferences;
 
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
@@ -18,7 +18,7 @@ import android.widget.ImageView;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceViewHolder;
 
-import org.lineageos.device.settings.R;
+import org.lineageos.device.DeviceSettings.R;
 
 public class AppRefreshRatePreference extends Preference {
 
@@ -120,7 +120,7 @@ public class AppRefreshRatePreference extends Preference {
         }
 
         new androidx.appcompat.app.AlertDialog.Builder(context)
-                .setTitle(R.string.refresh_rate_title_dialog)
+                .setTitle(R.string.refresh_rate_app_title_dialog)
                 .setSingleChoiceItems(options, checkedItem, (dialog, which) -> {
                     int selectedFps = values[which];
                     if (selectedFps != mCurrentFps) {

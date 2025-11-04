@@ -5,7 +5,7 @@
 
     <fragment
         android:id="@+id/bypass_charging_fragment"
-        android:name="org.lineageos.device.settings.refreshrate.RefreshRateFragment"
+        android:name="org.lineageos.device.DeviceSettings.refreshrate.RefreshRateFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

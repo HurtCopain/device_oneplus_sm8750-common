@@ -10,7 +10,7 @@
  * Power connect/disconnect handlers are left empty (TODO).
  */
 
-package org.lineageos.device.settings;
+package org.lineageos.device.DeviceSettings;
 
 import android.app.Service;
 import android.content.BroadcastReceiver;
@@ -23,9 +23,10 @@ import android.util.Log;
 
 import androidx.annotation.Nullable;
 
-import org.lineageos.device.settings.gamebar.GameBar;
-import org.lineageos.device.settings.gamebar.GameBarController;
-import org.lineageos.device.settings.gamebar.GameBarMonitorService;
+import org.lineageos.device.DeviceSettings.display.HbmController;
+import org.lineageos.device.DeviceSettings.gamebar.GameBar;
+import org.lineageos.device.DeviceSettings.gamebar.GameBarController;
+import org.lineageos.device.DeviceSettings.gamebar.GameBarMonitorService;
 
 public class DeviceSettingsService extends Service {
     private static final String TAG = "DeviceSettingsService";
@@ -128,8 +129,10 @@ public class DeviceSettingsService extends Service {
         if (Constants.DEBUG) Log.i(TAG, "Screen OFF - stopping GameBar monitoring and hiding overlay");
 
         try {
-            // Ensure overlay hidden
+            // Uncondicionally disable HBM
+            HbmController.getInstance(context).disableHbm();
             try {
+                // Ensure GameBar overlay hidden
                 GameBar.getInstance(context).hide();
             } catch (Exception e) {
                 Log.w(TAG, "GameBar.hide() failed", e);

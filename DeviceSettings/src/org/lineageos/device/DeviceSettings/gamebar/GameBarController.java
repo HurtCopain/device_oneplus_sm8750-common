@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.device.settings.gamebar;
+package org.lineageos.device.DeviceSettings.gamebar;
 
 import android.content.Context;
 import android.text.TextUtils;
@@ -22,7 +22,7 @@ import android.util.Log;
 
 import androidx.preference.PreferenceManager;
 
-import org.lineageos.device.settings.Constants;
+import org.lineageos.device.DeviceSettings.Constants;
 
 public class GameBarController {
 

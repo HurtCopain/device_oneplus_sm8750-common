@@ -2,15 +2,15 @@
  * SPDX-FileCopyrightText: 2025 AlphaDroid
  * SPDX-License-Identifier: Apache-2.0
  */
-package org.lineageos.device.settings.display;
+package org.lineageos.device.DeviceSettings.display;
 
 import android.graphics.drawable.Icon;
 import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
 import android.util.Log;
 
-import org.lineageos.device.settings.Constants;
-import org.lineageos.device.settings.R;
+import org.lineageos.device.DeviceSettings.Constants;
+import org.lineageos.device.DeviceSettings.R;
 
 public class HbmTile extends TileService {
     private static final String TAG = "HbmTile";
@@ -55,6 +55,7 @@ public class HbmTile extends TileService {
 
         tile.setState(enabled ? Tile.STATE_ACTIVE : Tile.STATE_INACTIVE);
         tile.setLabel(getString(R.string.hbm_title));
+        tile.setSubtitle(enabled ? getString(R.string.on) : getString(R.string.off));
         tile.setContentDescription(getString(R.string.hbm_summary));
         tile.setIcon(Icon.createWithResource(this, R.drawable.ic_hbm));
         tile.updateTile();

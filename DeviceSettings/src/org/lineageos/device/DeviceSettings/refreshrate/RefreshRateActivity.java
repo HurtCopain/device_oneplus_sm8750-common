@@ -3,13 +3,13 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.device.settings.refreshrate;
+package org.lineageos.device.DeviceSettings.refreshrate;
 
 import android.os.Bundle;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 
-import org.lineageos.device.settings.R;
+import org.lineageos.device.DeviceSettings.R;
 
 public class RefreshRateActivity extends CollapsingToolbarBaseActivity {
 
@@ -17,6 +17,6 @@ public class RefreshRateActivity extends CollapsingToolbarBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_refresh_rate);
-        setTitle(getString(R.string.bypass_charging_title));
+        setTitle(getString(R.string.refresh_rate_title));
     }
 }

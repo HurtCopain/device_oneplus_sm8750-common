@@ -6,7 +6,7 @@
  * Handles app list persistence, parsing, and UI integration.
  */
 
-package org.lineageos.device.settings.utils;
+package org.lineageos.device.DeviceSettings.utils;
 
 import android.content.Context;
 import android.content.pm.PackageInfo;
@@ -18,7 +18,7 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceGroup;
 import androidx.preference.PreferenceManager;
 
-import org.lineageos.device.settings.Constants;
+import org.lineageos.device.DeviceSettings.Constants;
 
 import java.util.ArrayList;
 import java.util.HashMap;

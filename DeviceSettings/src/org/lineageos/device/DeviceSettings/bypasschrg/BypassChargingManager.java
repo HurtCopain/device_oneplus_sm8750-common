@@ -6,7 +6,7 @@
  * Uses shared ForegroundAppDetector for app monitoring.
  */
 
-package org.lineageos.device.settings.bypasschrg;
+package org.lineageos.device.DeviceSettings.bypasschrg;
 
 import android.content.Context;
 import android.content.Intent;
@@ -21,8 +21,8 @@ import android.app.Service;
 
 import androidx.preference.PreferenceManager;
 
-import org.lineageos.device.settings.Constants;
-import org.lineageos.device.settings.utils.ForegroundAppDetector;
+import org.lineageos.device.DeviceSettings.Constants;
+import org.lineageos.device.DeviceSettings.utils.ForegroundAppDetector;
 
 import java.util.HashSet;
 import java.util.Set;

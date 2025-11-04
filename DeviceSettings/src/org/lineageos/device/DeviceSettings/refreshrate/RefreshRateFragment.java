@@ -6,7 +6,7 @@
  * Uses custom AppRefreshRatePreference for per-app list with delete buttons.
  */
 
-package org.lineageos.device.settings.refreshrate;
+package org.lineageos.device.DeviceSettings.refreshrate;
 
 import android.app.Dialog;
 import android.os.Bundle;
@@ -19,12 +19,12 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceGroup;
 
-import org.lineageos.device.settings.Constants;
-import org.lineageos.device.settings.R;
-import org.lineageos.device.settings.preferences.AppRefreshRatePreference;
-import org.lineageos.device.settings.utils.AppListManager;
-import org.lineageos.device.settings.utils.PackageListAdapter;
-import org.lineageos.device.settings.utils.PackageListAdapter.PackageItem;
+import org.lineageos.device.DeviceSettings.Constants;
+import org.lineageos.device.DeviceSettings.R;
+import org.lineageos.device.DeviceSettings.preferences.AppRefreshRatePreference;
+import org.lineageos.device.DeviceSettings.utils.AppListManager;
+import org.lineageos.device.DeviceSettings.utils.PackageListAdapter;
+import org.lineageos.device.DeviceSettings.utils.PackageListAdapter.PackageItem;
 
 import java.util.HashSet;
 import java.util.Map;

@@ -6,7 +6,7 @@
  * Supports multiple concurrent listeners (GameBar and BypassCharging).
  */
 
-package org.lineageos.device.settings.utils;
+package org.lineageos.device.DeviceSettings.utils;
 
 import android.app.ActivityManager;
 import android.app.ActivityTaskManager;
@@ -23,7 +23,7 @@ import android.os.SystemClock;
 import android.text.TextUtils;
 import android.util.Log;
 
-import org.lineageos.device.settings.Constants;
+import org.lineageos.device.DeviceSettings.Constants;
 
 import java.util.ArrayList;
 import java.util.List;

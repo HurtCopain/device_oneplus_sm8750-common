@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.device.settings.utils;
+package org.lineageos.device.DeviceSettings.utils;
 
 import android.content.Context;
 import android.content.Intent;
@@ -34,7 +34,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.lineageos.device.settings.R;
+import org.lineageos.device.DeviceSettings.R;
 
 import java.util.Collections;
 import java.util.HashSet;

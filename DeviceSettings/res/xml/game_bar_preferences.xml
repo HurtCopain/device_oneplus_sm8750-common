@@ -18,7 +18,7 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:settings="http://schemas.android.com/apk/res/org.lineageos.device.settings">
+    xmlns:settings="http://schemas.android.com/apk/res/org.lineageos.device.DeviceSettings">
 
     <!-- Master Enable -->
     <SwitchPreferenceCompat
@@ -122,7 +122,7 @@
             android:entries="@array/game_bar_split_mode_entries"
             android:entryValues="@array/game_bar_split_mode_values" />
 
-        <org.lineageos.device.settings.preferences.CustomSeekBarPreference
+        <org.lineageos.device.DeviceSettings.preferences.CustomSeekBarPreference
             android:key="game_bar_text_size"
             android:title="@string/game_bar_text_size"
             android:summary="@string/game_bar_text_size_summary"
@@ -131,7 +131,7 @@
             settings:min="10"
             settings:interval="1" />
 
-        <org.lineageos.device.settings.preferences.CustomSeekBarPreference
+        <org.lineageos.device.DeviceSettings.preferences.CustomSeekBarPreference
             android:key="game_bar_background_alpha"
             android:title="@string/game_bar_background_alpha"
             android:summary="@string/game_bar_background_alpha_summary"
@@ -140,7 +140,7 @@
             settings:min="0"
             settings:interval="1" />
 
-        <org.lineageos.device.settings.preferences.CustomSeekBarPreference
+        <org.lineageos.device.DeviceSettings.preferences.CustomSeekBarPreference
             android:key="game_bar_corner_radius"
             android:title="@string/game_bar_corner_radius"
             android:summary="@string/game_bar_corner_radius_summary"
@@ -149,7 +149,7 @@
             settings:min="0"
             settings:interval="1" />
 
-        <org.lineageos.device.settings.preferences.CustomSeekBarPreference
+        <org.lineageos.device.DeviceSettings.preferences.CustomSeekBarPreference
             android:key="game_bar_padding"
             android:title="@string/game_bar_padding"
             android:summary="@string/game_bar_padding_summary"
@@ -158,7 +158,7 @@
             settings:min="4"
             settings:interval="1" />
 
-        <org.lineageos.device.settings.preferences.CustomSeekBarPreference
+        <org.lineageos.device.DeviceSettings.preferences.CustomSeekBarPreference
             android:key="game_bar_item_spacing"
             android:title="@string/game_bar_item_spacing"
             android:summary="@string/game_bar_item_spacing_summary"

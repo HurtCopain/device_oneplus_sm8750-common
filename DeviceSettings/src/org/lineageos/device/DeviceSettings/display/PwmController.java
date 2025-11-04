@@ -2,7 +2,7 @@
  * SPDX-FileCopyrightText: 2025 AlphaDroid
  * SPDX-License-Identifier: Apache-2.0
  */
-package org.lineageos.device.settings.display;
+package org.lineageos.device.DeviceSettings.display;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -10,8 +10,8 @@ import android.util.Log;
 
 import androidx.preference.PreferenceManager;
 
-import org.lineageos.device.settings.Constants;
-import org.lineageos.device.settings.utils.FileUtils;
+import org.lineageos.device.DeviceSettings.Constants;
+import org.lineageos.device.DeviceSettings.utils.FileUtils;
 
 public class PwmController {
     private static final String TAG = "PwmController";

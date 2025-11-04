@@ -5,7 +5,7 @@
  * Helper class for managing app list preferences across multiple fragments
  */
 
-package org.lineageos.device.settings.utils;
+package org.lineageos.device.DeviceSettings.utils;
 
 import android.content.Context;
 import android.content.pm.PackageManager;
@@ -16,7 +16,7 @@ import androidx.preference.PreferenceGroup;
 
 import java.util.Map;
 
-import org.lineageos.device.settings.Constants;
+import org.lineageos.device.DeviceSettings.Constants;
 
 public class AppPreferencesHelper {
     private static final String TAG = "AppPreferencesHelper";
