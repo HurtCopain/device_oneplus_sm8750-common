@@ -13,16 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package org.lineageos.device.DeviceSettings;
-
 
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.InsetDrawable;
 import android.os.Bundle;
+import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
-
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 import com.google.android.material.appbar.AppBarLayout;
@@ -34,14 +32,14 @@ public class DeviceSettingsActivity extends CollapsingToolbarBaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setTitle(" ");
         getSupportFragmentManager().beginTransaction().replace(
                 R.id.content_frame,
                 new DeviceSettings()).commit();
 
         // Inject banner dynamically into CollapsingToolbarLayout
-        CollapsingToolbarLayout collapsingToolbar =
-            findViewById(R.id.collapsing_toolbar);
+        CollapsingToolbarLayout collapsingToolbar = findViewById(R.id.collapsing_toolbar);
         if (collapsingToolbar != null) {
             collapsingToolbar.setTitleEnabled(false);
 

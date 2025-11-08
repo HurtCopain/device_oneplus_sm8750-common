@@ -44,7 +44,6 @@ import org.lineageos.device.DeviceSettings.display.HbmController;
 import org.lineageos.device.DeviceSettings.display.PwmController;
 import org.lineageos.device.DeviceSettings.utils.FileUtils;
 
-
 public class DeviceSettings extends SettingsBasePreferenceFragment
         implements Preference.OnPreferenceChangeListener {
     private static final String TAG = DeviceSettings.class.getSimpleName();
@@ -113,7 +112,6 @@ public class DeviceSettings extends SettingsBasePreferenceFragment
 
         mOnePulsePWMSwitch = (SwitchPreferenceCompat) findPreference(Constants.KEY_ONEPULSE_PWM);
         if (FileUtils.isFileWritable(Constants.NODE_ONEPULSE_PWM)) {
-
             mOnePulsePWMSwitch.setEnabled(true);
             mOnePulsePWMSwitch.setChecked(mPwmController.isPwmEnabled());
             mOnePulsePWMSwitch.setOnPreferenceChangeListener(this);

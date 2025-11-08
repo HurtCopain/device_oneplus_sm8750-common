@@ -27,8 +27,6 @@ import lineageos.providers.LineageSettings;
 import org.lineageos.device.DeviceSettings.utils.FileUtils;
 import org.lineageos.device.DeviceSettings.Constants;
 
-
-
 public abstract class SliderControllerBase {
 
     private static final String TAG = "SliderControllerBase";

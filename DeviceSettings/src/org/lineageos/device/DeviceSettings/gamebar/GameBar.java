@@ -46,10 +46,9 @@ import android.widget.TextView;
 
 import androidx.preference.PreferenceManager;
 
-
+import org.lineageos.device.DeviceSettings.Constants;
 import org.lineageos.device.DeviceSettings.R;
 import org.lineageos.device.DeviceSettings.utils.ForegroundAppDetector;
-import org.lineageos.device.DeviceSettings.Constants;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

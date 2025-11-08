@@ -35,7 +35,6 @@ import org.lineageos.device.DeviceSettings.gamebar.GameBarTileService;
 import org.lineageos.device.DeviceSettings.display.HbmTile;
 import org.lineageos.device.DeviceSettings.display.PwmTile;
 
-
 /* ADDED imports for refresh-rate tile handling */
 import org.lineageos.device.DeviceSettings.refreshrate.RefreshRateTile;
 import org.lineageos.device.DeviceSettings.refreshrate.RefreshRateActivity;
